@@ -55,6 +55,7 @@ GEM
     bootsnap (1.3.2)
       msgpack (~> 1.0)
     builder (3.2.3)
+    bulma (0.1.0)
     byebug (10.0.2)
     capybara (3.8.1)
       addressable
@@ -189,6 +190,9 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     shellany (0.0.1)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -227,8 +231,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (~> 2.4)
+  better_errors (~> 2.1, >= 2.1.1)
   bootsnap (>= 1.1.0)
+  bulma (~> 0.1.0)
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -241,6 +246,7 @@ DEPENDENCIES
   rails (~> 5.2.1)
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form (~> 4.0, >= 4.0.1)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

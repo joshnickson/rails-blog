@@ -33,11 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Get better errors
-gem 'better_errors', '~> 2.4'
 
-# `Simple form`
-# gem 'simple_form', '~> 3.5'
+# Easy forms
+gem 'simple_form', '~> 4.0', '>= 4.0.1'
+
+# Bulma: A ruby gem for bulma Modern CSS framework based on Flexbox
+gem 'bulma', '~> 0.1.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -55,7 +56,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Guard is a command line tool to easily handle events on file modification system
-  gem 'guard', '~>2.14', '>=2.14.1'
+  gem 'guard', '~>2.14', '>=2.14.1', require: false
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified
   gem 'guard-livereload', '~>2.5', '>=2.5.2'
 end
@@ -66,6 +67,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
